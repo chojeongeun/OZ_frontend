@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+  background-color: #7fa5f7;
+}
+
+/* 스크린 크기 조정 */
+.chat-screen {
+  height: calc(100% - 100px);
+}
+
+/* 유저 정보 표시되는 부분 */
+.user {
+  background-color: #fff;
+  padding: 16px;
+  height: 80px;
+}
+
+.user__column {
+  float: left;
+}
+
+.user__pic {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #7fa5f7;
+}
+
+.user__nick,
+.user__count {
+  margin: 5px;
+}
+
+.user__count {
+  font-size: 12px;
+  color: gray;
+}
+
+.btn {
+  float: right;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 23px;
+  color: #777;
+}
+
+/* 채팅 입력 창 */
+.chat-form {
+  height: 100px;
+  background-color: #fff;
+}
+
+.chat-form_filed {
+  height: 100px;
+}
+
+.chat-from__msg {
+  width: calc(100% - 100px);
+  height: 100px;
+  border: none;
+  resize: none;
+  font-size: 20px;
+  padding: 10px;
+  float: left;
+}
+
+.chat-form__bt {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: rgb(232, 229, 34);
+  font-size: 18px;
+  float: right;
+  border: none;
+}
+
+.chat-form__bt:active {
+  background-color: rgb(161, 165, 30);
+}
+
+.chat-from__msg:focus {
+  outline: none;
+}
