@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입 폼 제작</title>
+  </head>
+  <body>
+    <h1>오즈코딩스쿨 회원가입</h1>
+    <form>
+      <input
+        type="email"
+        id="email"
+        placeholder="이메일을 입력해주세요."
+      /><br />
+      <input type="text" id="name" placeholder="이름을 입력해주세요." /><br />
+      <input
+        type="password"
+        id="pwd"
+        placeholder="비밀번호를 입력해주세요."
+      /><br />
+      <input
+        type="password"
+        id="re-pwd"
+        placeholder="비밀번호를 다시 입력해주세요."
+      /><br />
+      <input type="text" id="phone_number" />_<input
+        type="text"
+        id="phone_number"
+      />_<input type="text" id="phone_number" /><br />
+      <p>00000</p>
+      <input type="button" value="인증번호 전송" disabled /><br />
+      <p>3:00</p>
+      <input type="button" value="인증확인" disabled /><br />
+      <select>
+        <option selected>지역을 선택해주세요</option>
+        <option value="">경기도</option>
+        <option value="">서울</option>
+        <option value="">강원도</option>
+        <option value="">충청도</option>
+        <option value="">전라도</option>
+        <option value="">인천</option>
+        <option value="">제주도</option>
+      </select>
+      <br />
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">여성</label>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">남성</label>
+      <br />
+      <input type="submit" value="가입하기" />
+    </form>
+
+    <h1>회원가입</h1>
+    <form>
+      <fieldset>
+        <legend>필수 입력 사항</legend>
+        <ul>
+          <li>
+            <label for="name">이름</label>
+            <span>:</span>
+            <input type="text" id="name" />
+          </li>
+          <li>
+            <label for="id">아이디</label>
+            <span>:</span>
+            <input
+              type="text"
+              id="id"
+              placeholder="6자 이상 20자 미만 공백 없이 입력해주세요."
+            />
+          </li>
+          <li>
+            <label for="pwd">비밀번호</label>
+            <span>:</span>
+            <input
+              type="password"
+              id="pwd"
+              placeholder="대소문자로 입력해주세요"
+            />
+          </li>
+          <li>
+            <label for="email">이메일</label>
+            <span>:</span>
+            <input type="email" id="email" />
+          </li>
+          <li>
+            <label for="phone_number">휴대폰</label>
+            <span>:</span>
+            <input type="text" id="phone_number" />
+          </li>
+        </ul>
+        <input type="submit" value="가입하기" />
+        <input type="reset" value="취소" />
+      </fieldset>
+
+      <fieldset>
+        <legend>취미</legend>
+        <ul>
+          <li>
+            <input type="checkbox" id="coding" name="hobby" value="coding" />
+            <label for="coding">코딩</label>
+            <input
+              type="checkbox"
+              id="exercise"
+              name="hobby"
+              value="exercise"
+            />
+            <label for="exercise">운동</label>
+            <input
+              type="checkbox"
+              id="breathing"
+              name="hobby"
+              value="breathing"
+            />
+            <label for="breathing">숨쉬기</label>
+            <input type="checkbox" id="trip" name="hobby" value="trip" />
+            <label for="trip">여행</label>
+            <input type="checkbox" id="sleep" name="hobby" value="sleep" />
+            <label for="sleep">잠자기</label>
+            <input type="checkbox" id="reading" name="hobby" value="reading" />
+            <label for="reading">독서</label>
+            <input
+              type="checkbox"
+              id="watching"
+              name="hobby"
+              value="watching"
+            />
+            <label for="watching">넷플시청</label>
+          </li>
+          <li>
+            <input type="radio" id="male" name="gender" />
+            <label for="male">남</label>
+            <input type="radio" id="female" name="gender" />
+            <label for="female">여</label>
+            <input type="radio" id="secret" name="gender" />
+            <label for="secret">비밀</label>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+  </body>
+</html>
