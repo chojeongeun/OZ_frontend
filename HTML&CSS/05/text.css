@@ -1,0 +1,36 @@
+.chat-screen__texts {
+  list-style-type: none;
+  padding: 0;
+}
+
+.chat-screen__texts > .text {
+  width: 280px;
+  height: 50px;
+  background: #d4da6c;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  padding: 10px;
+  line-height: 30px;
+  position: relative;
+  left: 20px;
+}
+
+.chat-screen__texts > .text::after {
+  content: "";
+  border-right: 16px solid #d4da6c;
+  /* transparent: 색상을 투명하게 만들고 싶을때 사용 */
+  border-bottom: 16px solid transparent;
+  position: absolute;
+  top: 10px;
+  left: -10px;
+}
+
+.chat-screen__texts > .text:hover {
+  background-color: #a6ab43;
+  transition: background-color 1.2s 0.2s ease-in;
+}
+
+.chat-screen__texts > .text:hover::after {
+  border-right: 10px solid #a6ab43;
+  transition: border-right 1.5s 0.2s ease-in;
+}
