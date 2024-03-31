@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* desktop 반응형 */
+body {
+  background: palevioletred;
+  transition: 0.5s;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container p {
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.container span {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+}
+
+.tablet,
+.mobile {
+  display: none;
+}
+/* tablet 반응형 */
+@media screen and (max-width: 1023px) {
+  body {
+    background: royalblue;
+  }
+  .desktop {
+    display: none;
+  }
+  .tablet {
+    display: block;
+  }
+}
+
+/* mobile 반응형 */
+@media screen and (max-width: 767px) {
+  body {
+    background: yellowgreen;
+  }
+  .tablet {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
